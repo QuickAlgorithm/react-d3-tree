@@ -16,7 +16,7 @@ export default class SvgTextElement extends React.PureComponent {
           transform={textLayout.transform}
           dy=".35em"
         >
-          {name}
+          {(attributes && attributes.label) || name}
         </text>
         <text
           className="nodeAttributesBase"
@@ -26,7 +26,7 @@ export default class SvgTextElement extends React.PureComponent {
           style={nodeStyle.attributes}
         >
           {attributes &&
-            Object.keys(attributes).map(labelKey => (
+            Object.keys(attributes).map(labelKey => labelKey !== 'label' && (
               <tspan x={textLayout.x} dy="1.2em" key={uuid.v4()}>
                 {labelKey}: {attributes[labelKey]}
               </tspan>
