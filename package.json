@@ -1,5 +1,5 @@
 {
-  "name": "react-d3-tree",
+  "name": "@QuickAlgorithm/react-d3-tree",
   "version": "1.16.1",
   "description": "React component to create interactive D3 tree hierarchies",
   "main": "lib/react-d3-tree.min.js",
@@ -112,7 +112,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bkrem/react-d3-tree.git"
+    "url": "git://github.com/QuickAlgorithm/react-d3-tree.git"
   },
   "keywords": [
     "react",
